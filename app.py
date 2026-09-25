@@ -290,7 +290,7 @@ if st.button("Run quick evaluation"):
         c1.metric("Sample users", evaluation["sample_users"])
         c2.metric(f"Prototype Hit Rate@{evaluation['k']}", f"{evaluation['model_hit_rate_at_k']:.2%}")
         c3.metric(f"Popularity Baseline@{evaluation['k']}", f"{evaluation['popularity_hit_rate_at_k']:.2%}")
-        st.info("Use these values as example evaluation evidence in your dissertation, but also explain the limitations of a small offline test.")
+        st.info("Offline evaluation completed using anonymised MovieLens test records.")
     else:
         st.warning("Not enough eligible users for evaluation.")
 
